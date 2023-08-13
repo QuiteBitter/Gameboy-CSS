@@ -1,0 +1,166 @@
+.gameboy-container {
+    height: 475px;
+    width: 285px;
+    background-color: #BEBDC4;
+    border-radius: 12px 12px 80px 12px;
+    border: black solid 4px;
+    position: relative;
+
+}
+
+.screen {
+    top: 35px;
+    left: 20px;
+    background-color: #546678;
+    width: 240px;
+    height: 185px;
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 10px 10px 40px 10px;
+}
+
+.innerscreen {
+    left: 43px;
+    background-color: #8AD43D;
+    width: 150px;
+    height: 149px;
+    position: absolute;
+    top: 17px;
+    border: 3px solid black;
+}
+
+.dpad {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: #BEBDC4;
+    border-radius: 100px;
+    left: 50px;
+    bottom: 115px;
+}
+
+.vertical {
+    position: absolute;
+    width: 25px;
+    height: 75px;
+    background-color: black;
+}
+
+.horizontal {
+    position: absolute;
+    width: 25px;
+    height: 75px;
+    rotate: 90deg;
+    background-color: black;
+}
+
+.buttons-ab {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    background-color: #BEBDC4;
+    right: 17px;
+    bottom: 144px;
+    rotate: -27deg;
+}
+
+.a {
+    position: relative;
+    float: right;
+    background-color: #B01C6C;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    border: 3px solid black;
+}
+
+.b {
+    position: relative;
+    float: left;
+    background-color: #B01C6C;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    border: 3px solid black;
+}
+
+.start-select {
+    position: absolute;
+    width: 85px;
+    height: 30px;
+    bottom: 55px;
+    left: 88px;
+}
+
+.start {
+    position: relative;
+    float: left;
+    width: 35px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #686868;
+    rotate: -22deg;
+}
+
+.select {
+    position: relative;
+    float: right;
+    width: 35px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #686868;
+    rotate: -22deg;
+}
+
+.screen::after {
+    content: "GAME BOY";
+    position: absolute;
+    top: 188px;
+    left: 49%;
+    transform: translateX(-50%);
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: #143AA2;
+}
+
+.a::before {
+    content: "A";
+    position: absolute;
+    top: 134%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #143AA2;
+}
+
+.b::before {
+    content: "B";
+    position: absolute;
+    top: 134%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #143AA2;
+}
+
+.start::before {
+    content: "START";
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0.6em;
+    color: #143AA2;
+}
+
+.select::before {
+    content: "SELECT";
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0.6em;
+    color: #143AA2;
+}
